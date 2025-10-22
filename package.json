@@ -1,0 +1,72 @@
+{
+  "name": "@abstractchain/automation-sdk",
+  "version": "0.1.0",
+  "description": "Comprehensive TypeScript/Solidity toolkit leveraging ERC-4337 Account Abstraction for gasless transactions, cross-chain DeFi automation, and social finance features",
+  "keywords": ["abstractchain", "erc-4337", "account-abstraction", "gasless", "cross-chain", "defi", "socialfi", "automation"],
+  "author": "AbstractChain Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abstractchain/automation-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abstractchain/automation-sdk/issues"
+  },
+  "homepage": "https://github.com/abstractchain/automation-sdk#readme",
+  "workspaces": [
+    "packages/*",
+    "contracts",
+    "bundler",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "test:contracts": "cd contracts && forge test",
+    "test:sdk": "turbo run test --filter=@abstractchain/sdk",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "prettier --write \"**/*.{ts,js,json,md,sol}\"",
+    "format:check": "prettier --check \"**/*.{ts,js,json,md,sol}\"",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "dev": "turbo run dev",
+    "contracts:build": "cd contracts && forge build",
+    "contracts:test": "cd contracts && forge test -vvv",
+    "contracts:coverage": "cd contracts && forge coverage",
+    "contracts:deploy": "cd contracts && forge script script/Deploy.s.sol --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast",
+    "bundler:dev": "cd bundler && npm run dev",
+    "bundler:build": "cd bundler && npm run build",
+    "docs:build": "typedoc --options typedoc.json",
+    "docs:serve": "http-server docs -p 3001",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build && changeset publish",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@types/node": "^20.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.2",
+    "turbo": "^1.10.12",
+    "typescript": "^5.1.6",
+    "typedoc": "^0.25.0",
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

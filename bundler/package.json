@@ -1,0 +1,49 @@
+{
+  "name": "@abstractchain/bundler",
+  "version": "0.1.0",
+  "description": "ERC-4337 Bundler service for AbstractChain Automation SDK",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "ethers": "^6.7.1",
+    "ws": "^8.13.0",
+    "redis": "^4.6.7",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.2",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "@types/morgan": "^1.9.4",
+    "@types/ws": "^8.5.5",
+    "@types/node": "^20.5.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.3",
+    "@vitest/coverage-v8": "^0.34.3"
+  },
+  "keywords": [
+    "erc-4337",
+    "bundler",
+    "account-abstraction",
+    "ethereum"
+  ],
+  "author": "AbstractChain Team",
+  "license": "MIT"
+}
