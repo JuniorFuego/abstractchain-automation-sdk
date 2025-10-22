@@ -1,7 +1,7 @@
 # AbstractChain Automation SDK
 
-[![CI](https://github.com/abstractchain/automation-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/abstractchain/automation-sdk/actions/workflows/ci.yml)
-[![Coverage](https://codecov.io/gh/abstractchain/automation-sdk/branch/main/graph/badge.svg)](https://codecov.io/gh/abstractchain/automation-sdk)
+[![CI](https://github.com/JuniorFuego/abstractchain-automation-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/JuniorFuego/abstractchain-automation-sdk/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/JuniorFuego/abstractchain-automation-sdk/branch/main/graph/badge.svg)](https://codecov.io/gh/JuniorFuego/abstractchain-automation-sdk)
 [![npm version](https://badge.fury.io/js/%40abstractchain%2Fsdk.svg)](https://badge.fury.io/js/%40abstractchain%2Fsdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -156,8 +156,8 @@ import { NFTModule } from '@abstractchain/sdk/nft';
 
 ```bash
 # Clone the repository
-git clone https://github.com/abstractchain/automation-sdk.git
-cd automation-sdk
+git clone https://github.com/JuniorFuego/abstractchain-automation-sdk.git
+cd abstractchain-automation-sdk
 
 # Install dependencies
 npm install
@@ -175,7 +175,7 @@ npm test
 ### Project Structure
 
 ```
-automation-sdk/
+abstractchain-automation-sdk/
 ├── packages/
 │   └── sdk/                 # TypeScript SDK
 ├── contracts/               # Smart contracts (Foundry)

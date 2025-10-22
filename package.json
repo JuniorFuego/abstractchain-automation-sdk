@@ -7,12 +7,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/abstractchain/automation-sdk.git"
+    "url": "https://github.com/JuniorFuego/abstractchain-automation-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/abstractchain/automation-sdk/issues"
+    "url": "https://github.com/JuniorFuego/abstractchain-automation-sdk/issues"
   },
-  "homepage": "https://github.com/abstractchain/automation-sdk#readme",
+  "homepage": "https://github.com/JuniorFuego/abstractchain-automation-sdk#readme",
   "workspaces": [
     "packages/*",
     "contracts",
